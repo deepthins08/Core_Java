@@ -5,13 +5,18 @@ class Email{
 	String fname;
 	String lastName;
 	
-	Email(Domain domain,String id,String fname,String lastName){
+	Email(){
+		
+		System.out.println("Created Email with no argument constructor");
+	}
+	
+	void setEmail(Domain domain,String id,String fname,String lastName){
 		
 		this.domain=domain;
 		this.id=id;
 		this.fname=fname;
 		this.lastName=lastName;
-		System.out.println("Created Domain,int,String,String with argument constructor");
+		
 	}
 	
 	void showInfo(){
@@ -24,7 +29,8 @@ class Email{
 		
 		if(domain!=null){
 			
-			System.out.println("Email domain is "+this.domain);
+			System.out.println("Email domain is "+this.domain.GMAIL);
+			System.out.println("Email domain is "+this.domain.OUTLOOK);
 		}
 		
 		System.out.println("Ending showInfo in Email");
