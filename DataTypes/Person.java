@@ -1,14 +1,16 @@
 class Person{
 	
 	String name;
-	Email[] email;
+	String[] email;
 	
 	
-	Person(String name,Email[] email){
+	Person(){
 		
-		this.name=name;
+		System.out.println("Created person with no arg constructor...");
+	}
+	
+	void setMail(String[] email){
 		this.email=email;
-		System.out.println("Created String,Email[] with arg constructor...");
 	}
 	
 	
@@ -22,11 +24,10 @@ class Person{
 		
 		for(int index=0;index<email.length;index++){
 			
-			Email ref=this.email[index];
+			String ref=this.email[index];
 			System.out.println("email "+ref);
-			if(ref!=null){
-			ref.showInfo();
-			}
+			
+			
 		}
 		
 		System.out.println("Ending showInfo in Person");
