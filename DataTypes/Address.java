@@ -1,7 +1,7 @@
 class Address{
 	
 	String street="Mico Layout";
-	long pincode=560076;
+	long pincode=560076L;
 	City city;
 	
 	Address(){
