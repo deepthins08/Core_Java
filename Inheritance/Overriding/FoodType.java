@@ -1,0 +1,4 @@
+enum FoodType{
+	
+	MEALS,TIFFEN,STARTERS,SNACKS;
+}
