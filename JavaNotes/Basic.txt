@@ -1,0 +1,300 @@
+1.
+
+Java : Java is a Object oriented programming language which is robust,secure,platform independent which makes it more efficient than other languages.
+
+Javac : Javac is a complier which is provided by the jvm. in which it will converts the java code into byte code.
+
+
+
+2.
+
+JDK : JDK stands for java development kit-which is used to excecute and write the program.
+      it is combination of Tools+JRE
+
+JRE : JRE Stands for Java run time environment. which is used to ececute the program. it is the combination of Libraries+JVM.
+
+
+JVM : JVM Stands for Java virtual Machine. Which is used to ececute the programs that written in java.which converts java files into byte.
+
+3.
+
+.java file: .java file is java file that we can write the code.this only understand by us.which is not understand by the machine
+
+.class : .class file is byte code that which is converted by java file to class file which understand by the machine. this class file can be run anywhere in other platform. 
+          because this .class file is platform independent.
+
+4.
+Java IDE: Integrated Development KIt: lists
+          
+          1.Eclipse
+          2.NetBeans
+          3.IntelliJ
+          4.JDeveloper
+
+
+5.Variable : Variables are the data types which are used to store the infromation in memory.
+            Types of variables
+            1.Class Level Variables
+            2.Method Level variables  
+          
+            1.Class level Variables: there are two types in this type
+                a. static variables:--->static variables are the variables which are declared in the class level using static key word.which stores only one copy of the variable value.
+
+                              EX:   class LapTop{
+
+                                             static String name;
+                                             static double cost;
+                                                
+                                                static void displayInfo(){
+                                                System.out.println("Displaying the info");
+                                                System.out.println("Laptop name is "+name);
+                                                System.out.println("Laptop cost is "+name);
+                                                  }
+
+                                              public static void main(String[] lap){
+                                                System.out.println("Starting main");
+                                                displayInfo();
+                                                 }
+       
+                b. non static variables:----->non static variables are the variables which are declared in the class level.it is not having any static keyword.these non static variables 
+                                              can access by the new keyword and constructor.
+
+
+                               Ex:    class LapTop{
+
+                                              String name;
+                                              double cost;
+                                                
+                                                void displayInfo(){
+                                                System.out.println("Displaying the info");
+                                                System.out.println("Laptop name is "+name);
+                                                System.out.println("Laptop cost is "+name);
+                                                  }
+
+                                              public static void main(String[] lap){
+                                                System.out.println("Starting main");
+                                                LapTop laptop=new LapTop();
+ 
+                                                laptop.displayInfo();
+                                                 } 
+
+            2.Method level variables: there are two types in this type
+                a. Local Variable:----> local variables are declared with in the method.these can only have access in the method only.outside the method the local variables are not worked.
+
+                         EX: class Bag{
+
+                                      static void openZip(){
+                                         String brand="Flexing";
+                                         double cost=900;
+                                         System.out.println("Displaying the local variables");
+                                         System.out.println("Bag brand is "+brand);
+                                         System.out.println("Bag cost is "+cost);
+                                        }
+                                      public static void main(String[] things){
+
+                                          System.out.println("starting main");
+                                          System.out.println(openZip());
+                                         } 
+
+                b. parameter variable:----> parameter variables are declared in the method paranthesis.which can be accessed by the other class also.
+
+                          EX: class Bag{
+
+                                      static void openZip(String brand,double cost){
+                                         System.out.println("Displaying the param variables");
+                                         System.out.println("Bag brand is "+brand);
+                                         System.out.println("Bag cost is "+cost);
+                                        }
+                                      public static void main(String[] things){
+
+                                          System.out.println("starting main");
+                                          System.out.println(openZip("Felxing",900);
+                                         } 
+
+  
+
+6.
+   Object oriented programming in java:----->java is a purely object oriented which means java is deal with the objects that are freal word entities. this object oriented programming 
+                                             foloows the 4 Principles
+
+                                            1.Polymorphism:---->it has a same name but it has  different functionalities.
+
+                                                                Ex:-->Tv is the same but its functionalities like volumeup,volume down,display working functionalities are different
+                                            2.Abstraction:----->abstraction means hiding the implementation details and knowing the functionalities only.
+                                                                Ex:---->When we driving a car we know how to drive but we dont how the engine works.
+                                            3.Encapsulation:-----> wrapping the single type of codes into one unit.means if we have to access the data we need an object.
+                                                                Ex:----->bank accnt transaction are secured that are not accessed by any one when we want to know the data 
+                                                                then only we can access it.
+                                            4.Inheritance:------>inheritance means obtaining all the parents proprties for the child class.
+
+                                                                Ex: if Animal is the parent class and dog is the child class. here dog is belongs to the animal group.
+
+7.  
+     Error: class should have only one main method.
+
+
+8.
+
+    data type: A data type is a collection of data values that are grouped together.
+
+                 types: 2 types are there
+                       1.Primitive data types :--->Primitive data types are the pre defined data types in java there are 8 primitive data types are there
+
+                                                  short,byte,int,long,doble,char,boolean,float.
+
+                                                  Ex:---> int cost;------>here int is a primitive data types 
+
+                       2.non primitive data types:----->non primitive data types are not predefirned we can use our own data type.these are infinte in number.
+                                                 EX:---->array,class,any object name(chair,laptop,......etc)
+
+                                                       Chair chair;  
+                                                                
+9. 
+    Dot operator is used to access the variables and methods of the class.
+    Ex: System.out.println("");----->here System is class,out is a variable,println is a method here by using dot operator we accessing the variables and mathod from class
+
+
+10. Java Features
+
+     Simple,portable,platform independent,robust,garbage collection,interpreted,object oriented,multithread,secure,High performance
+
+11. array is a collection af an same type elements when the array is created the array is fixed the length.
+
+            array declaration :---> int[] array={};
+                                    here int is a data type ,[] is represinting the array , array is a variables, flower braces are used to store the elements.
+                                   Ex: class Fruits{
+
+                                         
+                                        piblic static void main(String[] arrays){
+                                             
+                                        String[] fruit;
+                                          for(int data=0;data<fruit.length;data++){
+                                                System.out.println(fruit[data]);
+                                                  }
+                                           }
+
+12. class is a blue print which an individual objects are created, class is a keyword, class is non primitive data type, class is a data type,type,t.
+    Ex: class Bag{
+
+            Sysytem.out.println("Printimg main in class");
+           }
+
+          here Bag is class name.
+
+     object is a real world entity.it has a state and behaviour.
+                               state can aslo called as field or variables.
+                               behaviour alse called as method.
+   
+                -->   state has two types 
+                   static and non static
+
+                  ex: static int number;--->static
+                      int number;-->non sttaic
+                ---> behaviour has two types 
+                   static and non static 
+
+                    EX: static void display();---->static
+                        void display();---->non static
+
+13. Key words are the preserve words in java. these words that cannot be use for the declaration of the class,variables,methods and etc.
+
+         assert,abstraction,byte,boolean,break,continue,double,do,default,enum,extends,instanceOf,import,implement,short,float.
+
+
+14.Constructor which is a special method which has a same name has a class name.it is used with the new keyword.which is used to intialize the instance variables.
+   
+    types
+      1.default constructor
+      2.parametrized constructor
+
+
+     1.default constructor: in the java the constructor is defaultly given by the jvm if we did not declared excplisitly. implicitly the java will provide the default constructor.
+        other wise we can declare the constructor ecxplicitly
+
+        Ex: class Tv{
+
+                 Tv(){
+                   System.out.println("this is no argument constructoe");
+                       }
+                  }
+        
+      2. parametrized constructor: the constructor will have parameters.
+             Ex: class TV{
+                     String brand;
+                     int cost;
+                    Tv(String barnd,int cost){
+
+                       this.brand=brand;
+                       this.cost=cost;
+                        }
+                     public static void main(String[] watch){
+                        Tv tv=new Tv("LG",40000);
+                        System.out.println("Tv barnd is " +tv.brand); 
+                        System.out.println("Tv cost is " +tv.cost);    
+
+                       }
+
+15. main method is a static so that JVM can invoke it without instantiating the class.
+
+    types:----> static method and non static method
+                static method in which it can directly accessed by the main method without instantiating the class.
+
+                  Ex:-->class Car{
+
+                            static void display(){
+                                   System.out.println("showing");
+                                   }
+                            public static void main(String[] drive){
+                                  display();
+                                  }
+
+                non static method in which it have to instantiate in main method.
+
+                 Ex:----> class Car{
+
+                             void display(){
+                                   System.out.println("showing");
+                                   }
+                            public static void main(String[] drive){
+       
+                                  Car car=new Car();
+                                  car.display();
+                                  }
+
+16.
+
+    class Length{
+             int[] value;
+         public static void main(String[] find){
+
+               int[] value={12,3,2,45,6,7,6};
+                 System.out.println(value.length);
+                       }
+                  }
+ 
+
+17. method:-->method which consists the number of statements in block
+    method overloading:----> method overloading which has a same name of method but different parameters.which should be have different data types.
+
+     Ex:   class Mobile{
+
+              String brand;
+              int cost;
+
+                void dislpayValues(String brand){
+                    this.brand=brand;
+                    System.out.println("mobile brand is "+this.brand);
+                   }
+                  void dislpayValues(String brand,int cost){
+                    this.brand=brand;
+                    this.cost=cost;
+                    System.out.println("mobile brand is "+this.brand);
+                    System.out.println("mobile brand is "+this.cost);
+                   }
+
+              public static void main(String[] buy){
+                  Mobile mobile= new Mobile();
+                  mobile.displayValues("Poco");
+                  mobile.displayvalues("Redmi",24000);
+
+                }    
